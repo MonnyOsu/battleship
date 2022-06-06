@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="main.mjs" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Battleships</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <div class="heading-wrapper">
+        <h1 class="heading">Battleships</h1>
+      </div>
+
+      <div class="gameboard-wrapper">
+        <!-- flex -->
+        <div class="player-section">
+          <div class="player-gameboard gameboard" data-player-gameboard>
+            <!-- grid -->
+          </div>
+          <div class="scoreboard scoreboard-active">
+            <p class="score-heading">Player Ships</p>
+            <p class="score-number" data-player-score></p>
+          </div>
+        </div>
+
+        <div class="player-section">
+          <div class="player-docks">
+            <div class="docks-heading">
+              <p>Place your <span class="ship-name"></span></p>
+              <!-- visible at begining, replaced by scoreboard after setting up board -->
+              <button class="rotate-button">Rotate</button>
+            </div>
+          </div>
+          <div class="cpu-gameboard gameboard" data-cpu-gameboard>
+            <!-- grid -->
+          </div>
+          <div class="scoreboard">
+            <p class="score-heading">Computer Ships</p>
+            <p class="score-number" data-cpu-score></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
